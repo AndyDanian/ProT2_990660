@@ -6,23 +6,63 @@ body {
  padding: 0;
 }
 
+form input,
+form label,
+form button{
+	display: block;
+	margin-bottom: 15px; /* espacio entre líneas */
+}
 
-/* Clases */
+/* Id&Clases */
 .pv1 {
 	text-align: center;
 	font-weight: bold;
 	font-style: italic;
 }
 
+/* background-color: rgb(100%,100%,100%); */
 .dv1 {
-	background-color: rgb(100%,100%,100%);
+background: linear-gradient(to right, #e0e0e0, #bfbfbf); /* de gris muy claro a gris claro */
+margin-left: 20px;
+margin-right: 20px;
+padding: 10px
 }
 
 .img-header {
 	position: absolute;
 	right: 2.5%;
-	top: 0;
+	top: 10px;
 	max-width: 6%; /* Asegurar que las imágenes no excedan el ancho del contenedor */
+}
+
+.label-acceder {
+font-weight: bold
+}
+
+.img-acceder{
+padding: 8px;
+max-width: 30%;
+margin-bottom: 10%
+}
+
+.form-acceder {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 40%;
+	margin-right: 43%;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.boton-acceder {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Etiquetas semánticas */
@@ -30,6 +70,7 @@ header {
 background: linear-gradient(to right, #006400, #00ff00); /* verde oscuro a verde claro */
 color: #fff;
 text-align: left;
+margin-top: 10px;
 margin-left: 20px;
 margin-right: 20px;
 padding: 20px;
