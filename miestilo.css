@@ -6,6 +6,8 @@ body {
  padding: 0;
 }
 
+
+/* Clases */
 .pv1 {
 	text-align: center;
 	font-weight: bold;
@@ -16,13 +18,22 @@ body {
 	background-color: rgb(100%,100%,100%);
 }
 
+.img-header {
+	position: absolute;
+	right: 2.5%;
+	top: 0;
+	max-width: 6%; /* Asegurar que las imágenes no excedan el ancho del contenedor */
+}
+
 /* Etiquetas semánticas */
 header {
-background-color: #69bd45;
+background: linear-gradient(to right, #006400, #00ff00); /* verde oscuro a verde claro */
 color: #fff;
-text-align: center;
+text-align: left;
+margin-left: 20px;
+margin-right: 20px;
 padding: 20px;
-font-size: 40px
+font-size: 40px;
 }
 
 section {
@@ -32,19 +43,19 @@ section {
 footer {
 	background-color: #4caf50; /* Color de fondo del footer */
 	color: #fff;
-	padding: 20px 0; 
-}
-
-.footer-content {
-	max-width: 800px; /* Ancho máximo del contenido del footer */
-	margin: 0 auto; /* Centrar el contenido del footer horizontalmente */
+	max-width: 1600px; /* Ancho máximo del contenido del footer */
+        margin-left: 20px;	
+        margin-right: 20px;	
 	text-align: center; 
+	padding: 20px;
 }
 
 /* Estilos para el nav y enlaces de ul y li */
 nav {
 	background-color: #4caf50;
 	padding: 10px;
+    	margin-left: 20px;
+    	margin-right: 20px;
 }
 
 nav ul {
@@ -72,8 +83,6 @@ nav ul li a:hover {
 
 .menu {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     text-align: center;
 }
 
