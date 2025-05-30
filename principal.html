@@ -5,25 +5,47 @@
 	<meta character="UTF-8"/>
 	<!-- Definición viewport por medio etiqueta meta-->
 	<meta name="viewport" content="witdh=devive-width initial-scale=1.0"/>
-	<link rel="STYLESHEET" href="assets/miestilo.css">
+	<!--link rel="STYLESHEET" href="assets/miestilo.css"-->
 	<link rel="STYLESHEET" href="assets/bootstrap5.3.6/css/bootstrap.min.css">
 	<!-- Nombre en la pestaña del navegador -->
 	<title> Relojes al Día </title>
 </head>
 <body>
-	<header>
+	<!--header>
 		<img class="img-header" src="assets/imagenes/relojes.jpg" alt="Logo de la empresa"> 
 		Inicio
-	</header>
-	<nav class="menu">
-		<ul>
-			<li><a href="assets/principal.html">Inicio</a></li>
-			<li><a href="assets/subpaginas/quienes.html">Quiénes Somos</a></li>
-			<li><a href="assets/subpaginas/acerca.html">Acerca de Nosotros</a></li>
-			<li><a href="assets/subpaginas/registrar.html">Registrarse</a></li>
-			<li><a href="assets/subpaginas/acceder.html">Iniciar Sesión</a></li>
-		</ul>
+	</header-->
+
+	<!--https://getbootstrap.com/docs/5.3/components/navbar/ bg adiciona background white-->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  	    <div class="container-fluid">
+               <a class="navbar-brand" href="#">
+		 <img src="assets/imagenes/logo.reloj.jpeg" alt="Bootstrap" width="30" height="28" class="d-inline-block align-text-top">
+		 eJoLR
+	       </a>
+	       <div class="collapse navbar-collapse" id="navbarNav">
+	           <ul class="navbar-nav">
+	             <li class="nav-item">
+		        <a class="nav-link active" aria-current="page" href="principal.html">Inicio</a>
+		     </li>
+	             <li class="nav-item">
+		       <a class="nav-link active" aria-current="page" href="assets/subpaginas/quienes.html">Quiénes Somos</a>
+		     </li>
+	             <li class="nav-item">
+		       <a class="nav-link active" aria-current="page" href="assets/subpaginas/acerca.html">Acerca de Nosotros</a>
+		     </li>
+	             <li class="nav-item">
+		       <a class="nav-link active" aria-current="page" href="assets/subpaginas/registrar.html">Registrarse</a>
+		     </li>
+	             <li class="nav-item">
+		       <a class="nav-link active" aria-current="page" href="assets/subpaginas/acceder.html">Acceder</a>
+		     </li>
+	           </ul>
+               </div>
+  	    </div>
 	</nav>
+
+
 	<div class="dv1">
 		<p class="pv1">
 		Somos una empresa que se dedica a la venta de relojes de mesa y pared con diseños únicos e innovadores. Utilizamos materia prima
