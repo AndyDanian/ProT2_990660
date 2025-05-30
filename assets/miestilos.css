@@ -25,11 +25,15 @@ carousel-control-width: 50%
 
 .my-card-style {
 max-width: 540px;
-margin-top: 20vh; /* hv alto de la pantalla */
+margin-top: 20vh; /* vh alto de la pantalla */
 }
 
 .my-card-text-style {
 text-align: justify;
+}
+
+.my-row-style {
+margin-top: 10vh
 }
 
 /* Mantener footer en la parte inferior de la pagina */
