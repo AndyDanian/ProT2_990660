@@ -13,6 +13,12 @@
 	</head>
 	
     <body>
+    <!-- 
+        wrapper and content son necesarios para mantener al footer en la parte
+        inferior de la pagina
+     -->
+    <div class="wrapper">
+        <main class="content">
     	<!-- https://getbootstrap.com/docs/5.3/components/card/#header-and-footer -->
     	<div class="card-header my-header-style">
     		Acerca de eJoLR
@@ -81,10 +87,10 @@
 
         <!-- https://getbootstrap.com/docs/5.3/components/card/ -->
         <!-- Información acerca de la empresa (mt: margin top, mx-auto: centra) -->
-        <div class="card mx-auto mt-5 mb-5 my-card-style">
+        <div class="card mx-auto mb-5 my-card-style">
             <div class="row g-0">
                 <!-- Imagen -->
-                <div class="col-md-4 mt-4">
+                <div class="col-md-4 mt-5">
                     <img src="../imagenes/logo.reloj.png" 
                     alt="Bootstrap" width="200" height="200" 
                     class="d-inline-block align-text-top">
@@ -104,26 +110,30 @@
             </div>
         </div>
         <!-- End Información acerca de la empresa -->
-    
-    </body>
-    <!-- Footer -->
-    <div class="card-footer text-center my-footer-style">
-    	<a href="https://www.instagram.com/" class="btn">
-    		<img src="../imagenes/IG.png" alt="Bootstrap" width="20" height="20" class="d-inline-block align-text-top">
-    	</a>
-    	<a href="https://www.facebook.com/" class="btn">	
-    		<img src="../imagenes/FB.png" alt="Bootstrap" width="20" height="20" class="d-inline-block align-text-top">
-    	</a>
-    	<a href="https://ar.pinterest.com/" class="btn">
-    		<img src="../imagenes/PR.png" alt="Bootstrap" width="30" height="30" class="d-inline-block align-text-top">
-    	</a>
-    	<div>
-    		San Juan con Pelligrini 321  |
-    		relojes@email.com  |
-    		379 0 00 00 11
-    	</div>
+        </main>
+        <!-- End container -->
+        
+        <!-- Footer -->
+        <div class="card-footer text-center my-footer-style">
+            <a href="https://www.instagram.com/" class="btn">
+                <img src="../imagenes/IG.png" alt="Bootstrap" width="20" height="20" class="d-inline-block align-text-top">
+            </a>
+            <a href="https://www.facebook.com/" class="btn">	
+                <img src="../imagenes/FB.png" alt="Bootstrap" width="20" height="20" class="d-inline-block align-text-top">
+            </a>
+            <a href="https://ar.pinterest.com/" class="btn">
+                <img src="../imagenes/PR.png" alt="Bootstrap" width="30" height="30" class="d-inline-block align-text-top">
+            </a>
+            <div>
+                San Juan con Pelligrini 321  |
+                relojes@email.com  |
+                379 0 00 00 11
+            </div>
+        </div>
+        <!-- End Footer -->
+        <!-- JS necesario para el carousel-autoplay-->
+        <script src="../js/bootstrap.bundle.min.js"></script>
     </div>
-    <!-- End Footer -->
-    <!-- JS necesario para el carousel-autoplay-->
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- End wrapper -->
+    </body>
 </html>
