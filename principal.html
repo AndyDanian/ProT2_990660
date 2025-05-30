@@ -17,8 +17,9 @@
 	</header-->
 
 	<!--https://getbootstrap.com/docs/5.3/components/navbar/ bg adiciona background white-->
-	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+	<nav class="navbar navbar-expand-lg body-tertiary" style="background-color: #16a085;" data-bs-theme="light">
   	    <div class="container-fluid">
+               <!-- Logo incrustado en navbar -->
                <a class="navbar-brand" href="#">
 		 <img src="assets/imagenes/logo.reloj.jpeg" alt="Bootstrap" width="30" height="28" class="d-inline-block align-text-top">
 		 eJoLR
@@ -40,8 +41,16 @@
 	             <li class="nav-item">
 		       <a class="nav-link active" aria-current="page" href="assets/subpaginas/acceder.html">Acceder</a>
 		     </li>
+	             <li class="nav-item">
+                        <a class="nav-link disabled fw-bold" aria-disabled="true">  ReLoJ <-> PuNTuaLiDaD </a>
+                     </li>
 	           </ul>
                </div>
+	       <!-- botón de buscar -->
+	       <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+                  <button class="btn btn-dark" type="submit">Buscar</button>
+               </form>
   	    </div>
 	</nav>
 
