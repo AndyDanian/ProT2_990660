@@ -13,6 +13,12 @@
 	</head>
 	
 	<body>
+	<!-- 
+    wrapper and content son necesarios para mantener al footer en la parte
+    inferior de la pagina
+    -->
+	<div class="wrapper">
+        <main class="content">
 		<!-- https://getbootstrap.com/docs/5.3/components/card/#header-and-footer -->
 		<div class="card-header my-header-style">
 			Inicio
@@ -98,37 +104,37 @@
 			</div>
 			<!-- Imagenes -->
 			<div class="carousel-inner  my-carousel-style">
-			  <div class="carousel-item active">
+			  <div class="carousel-item mt-5 active">
 				<img src="assets/imagenes/reloj.mano.jpg" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-one d-md-block">
 					<h4> Relojes Analógicos de Mano </h4>
 				</div>
 			  </div>
-			  <div class="carousel-item">
+			  <div class="carousel-item mt-2">
 				<img src="assets/imagenes/reloj.bolsillo.jpeg" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-one d-md-block">
 					<h4> Relojes Analógicos de Bolsillo </h4>
 				</div>
 			  </div>
-			  <div class="carousel-item">
+			  <div class="carousel-item mt-2">
 				<img src="assets/imagenes/reloj.kuku.jpg" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-one d-md-block">
 					<h4> Relojes Cucu (Encargo) </h4>
 				</div>
 			  </div>
-			  <div class="carousel-item">
+			  <div class="carousel-item mt-5">
 				<img src="assets/imagenes/reloj.exterior.jpg" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-one d-md-block">
 					<h4> Fabricamos Relojes para Exteriores (Encargo) </h4>
 				</div>
 			  </div>
-			  <div class="carousel-item">
+			  <div class="carousel-item mt-5">
 				<img src="assets/imagenes/reloj.digital.jpg" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-one d-md-block">
 					<h4> Relojes Digitales de Mano </h4>
 				</div>
 			  </div>
-			  <div class="carousel-item">
+			  <div class="carousel-item mt-5">
 				<img src="assets/imagenes/reloj.smart.jpg" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-one d-md-block">
 					<h4> Relojes Inteligentes de Mano </h4>
@@ -146,6 +152,8 @@
 			</button>
 		</div>
 		<!-- End Carousel -->
+		</main>
+		<!-- End container -->
 
 		<!-- Footer -->
 		<div class="card-footer text-center my-footer-style">
@@ -168,5 +176,7 @@
 
 		<!-- JS necesario para el carousel-autoplay-->
 		<script src="assets/js/bootstrap.bundle.min.js"></script>
+	</div>
+	<!-- End wrapper -->
 	</body>
 </html>
