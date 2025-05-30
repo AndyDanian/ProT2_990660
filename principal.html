@@ -62,7 +62,20 @@
 
 	<!-- Carousel -->
 	<!-- https://getbootstrap.com/docs/5.3/components/carousel/ -->
-	<div id="carouselExample" class="carousel slide">
+	<div id="carouselRelojes" class="carousel slide">
+		<!-- 
+			Indicador de imagen centrado en la parte inferior de las imagenes 
+			id del anterior div como data-bs-target de los button tienen que
+			ser los mismos, para que cumplan su funcionalidad
+		-->
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselRelojes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselRelojes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselRelojes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			<button type="button" data-bs-target="#carouselRelojes" data-bs-slide-to="3" aria-label="Slide 4"></button>
+			<button type="button" data-bs-target="#carouselRelojes" data-bs-slide-to="4" aria-label="Slide 5"></button>
+		</div>
+		<!-- Imagenes -->
 		<div class="carousel-inner">
 		  <div class="carousel-item active">
 			<img src="assets/imagenes/reloj.mano.jpg" class="d-block w-100" alt="...">
@@ -83,11 +96,12 @@
 			<img src="assets/imagenes/reloj.smart.jpg" class="d-block w-100" alt="...">
 		  </div>
 		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+		<!-- Botones para avanzar o retroceder en el carousel -->
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselRelojes" data-bs-slide="prev">
 		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 		  <span class="visually-hidden">Previous</span>
 		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselRelojes" data-bs-slide="next">
 		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
 		  <span class="visually-hidden">Next</span>
 		</button>
