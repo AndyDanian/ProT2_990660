@@ -13,7 +13,11 @@ form button{
 	margin-bottom: 15px; /* espacio entre líneas */
 }
 
-/* Id&Clases */
+/* Clases&Id */
+/*.navbar-gradient { */
+/*      background: linear-gradient(to right, #2ecc71, #27ae60); */ /* verde claro a verde oscuro */ 
+/*    } */
+
 .pv1 {
 	text-align: center;
 	font-weight: bold;
