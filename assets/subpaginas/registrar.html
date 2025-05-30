@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="../miestilos.css">
 	</head>
 	
-    <body>
+    <body class="p-1">
     <!-- 
         wrapper and content son necesarios para mantener al footer en la parte
         inferior de la pagina
@@ -21,7 +21,7 @@
         <main class="content">
     	<!-- https://getbootstrap.com/docs/5.3/components/card/#header-and-footer -->
     	<div class="card-header my-header-style">
-    		Registrarse
+    		Registro
     	</div>
 
     	<!-- Nav -->
@@ -85,8 +85,111 @@
     	</nav>
     	<!-- End Nav -->
 
+        <!-- Formulario de registro -->
+        <!-- https://getbootstrap.com/docs/5.3/components/dropdowns/#accessibility -->
         <!-- https://getbootstrap.com/docs/5.3/components/card/ -->
-        <!-- Información de integrantes (mt: margin top, mx-auto: centra) -->
+        <div class="card mx-auto my-card-style1">
+            <div class="dropdown m-4">
+                <form>
+                    <!-- Solicitud Nombres y Apellidos -->
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="Name1" class="form-label fw-bold">
+                                Nombres
+                            </label>
+                            <input type="name" class="form-control" id="Name1" placeholder="Nombres">
+                        </div>
+                        <div class="col">
+                            <label for="Apellido1" class="col form-label fw-bold">
+                                Apellidos
+                            </label>
+                            <input type="surname" class="form-control" id="Surname1" placeholder="Apellidos">
+                        </div>
+                    </div>
+                    <!-- Sexo -->
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                    <label class="form-check-label" for="dropdownCheck">
+                                        Femenino
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                    <label class="form-check-label" for="dropdownCheck">
+                                        Masculino
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Solicitud del Tipo de Cuenta -->
+                    <div class="row mb-3">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tipo Cuenta
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownButton">
+                            <li><a class="dropdown-item" data-value="Novato">
+                                Novato
+                            </a></li>
+                            <li><a class="dropdown-item" data-value="Ocasional">
+                                Ocasional
+                            </a></li>
+                            <li><a class="dropdown-item" data-value="Coleccionista">
+                                Coleccionista
+                            </a></li>
+                        </ul>
+                    </div>
+                    <!-- Solicitud de Correo Electrónico -->
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="Email1" class="form-label fw-bold">
+                                Correo Electrónico
+                           </label>
+                           <input type="email" class="form-control" id="Email1" placeholder="email@example.com">
+                        </div>
+                        <div class="col">
+                            <label for="Email2" class="form-label fw-bold">
+                                Repetir Correo Electrónico
+                           </label>
+                           <input type="email" class="form-control" id="Email2" placeholder="email@example.com">
+                        </div>
+                    </div>
+                    <!-- Solicitud de la Contraseña -->
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="Password1" class="form-label fw-bold">
+                                Contraseña
+                            </label>
+                            <input type="password" class="form-control" id="Password1" placeholder="Contraseña">
+                        </div>
+                        <div class="col">
+                            <label for="Password2" class="form-label fw-bold">
+                                Repetir Contraseña
+                            </label>
+                            <input type="password" class="form-control" id="Password2" placeholder="Repetir Contraseña">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                            <label class="form-check-label" for="dropdownCheck">
+                                ¿Accepta las Condiciones?
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Acceder</button>
+                    <button type="cancel" class="btn btn-danger">Cancelar</button>
+                </form>
+            </div>
+        </div>
+        <!-- End Formulario de registro -->
         
         <!-- End Información acerca de la empresa -->
         </main>
@@ -112,6 +215,20 @@
         <!-- End Footer -->
         <!-- JS necesario para el carousel-autoplay-->
         <script src="../js/bootstrap.bundle.min.js"></script>
+
+        <!-- JavaScript para actualizar el texto del botón -->
+        <script>
+            const dropdownItems = document.querySelectorAll('.dropdown-item');
+            const dropdownButton = document.getElementById('dropdownButton');
+
+            dropdownItems.forEach(item => {
+                item.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const selected = this.getAttribute('data-value');
+                    dropdownButton.textContent = selected;
+                });
+            });
+        </script>
     </div>
     <!-- End wrapper -->
     </body>
