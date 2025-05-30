@@ -9,3 +9,7 @@ text-align: left;
 padding: 20px;
 font-size: 40px;
 }
+
+.my-footer-style {
+background: linear-gradient(to right, #006400, #00ff00); /* verde oscuro a verde claro */
+}
