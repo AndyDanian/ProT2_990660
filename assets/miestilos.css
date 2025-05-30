@@ -20,7 +20,7 @@ background: linear-gradient(to right, #006400, #00ff00); /* verde oscuro a verde
 }
 
 .my-carousel-style {
-carousel-control-width: 50%
+max-width: 50%;
 }
 
 .my-card-style {
