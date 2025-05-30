@@ -1,3 +1,11 @@
 .my-bg-navBar{
 background-color: #16a085
 }
+
+.my-header-style {
+background: linear-gradient(to right, #006400, #00ff00); /* verde oscuro a verde claro */
+color: #fff;
+text-align: left;
+padding: 20px;
+font-size: 40px;
+}
