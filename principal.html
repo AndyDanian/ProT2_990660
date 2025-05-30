@@ -62,7 +62,8 @@
 
 	<!-- Carousel -->
 	<!-- https://getbootstrap.com/docs/5.3/components/carousel/ -->
-	<div id="carouselRelojes" class="carousel slide">
+	<!-- data-bs-="carousel" autoplay -->
+	<div id="carouselRelojes" class="carousel slide" data-bs-ride="carousel">
 		<!-- 
 			Indicador de imagen centrado en la parte inferior de las imagenes 
 			id del anterior div como data-bs-target de los button tienen que
@@ -74,26 +75,45 @@
 			<button type="button" data-bs-target="#carouselRelojes" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			<button type="button" data-bs-target="#carouselRelojes" data-bs-slide-to="3" aria-label="Slide 4"></button>
 			<button type="button" data-bs-target="#carouselRelojes" data-bs-slide-to="4" aria-label="Slide 5"></button>
+			<button type="button" data-bs-target="#carouselRelojes" data-bs-slide-to="5" aria-label="Slide 6"></button>
 		</div>
 		<!-- Imagenes -->
 		<div class="carousel-inner">
 		  <div class="carousel-item active">
 			<img src="assets/imagenes/reloj.mano.jpg" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-one d-md-block">
+				<h4> Relojes Analógicos de Mano </h4>
+			</div>
 		  </div>
 		  <div class="carousel-item">
 			<img src="assets/imagenes/reloj.bolsillo.jpeg" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-one d-md-block">
+				<h4> Relojes Analógicos de Bolsillo </h4>
+			</div>
 		  </div>
 		  <div class="carousel-item">
 			<img src="assets/imagenes/reloj.kuku.jpg" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-one d-md-block">
+				<h4> Relojes Cucu (Encargo) </h4>
+			</div>
 		  </div>
 		  <div class="carousel-item">
 			<img src="assets/imagenes/reloj.exterior.jpg" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-one d-md-block">
+				<h4> Fabricamos Relojes para Exteriores (Encargo) </h4>
+			</div>
 		  </div>
 		  <div class="carousel-item">
 			<img src="assets/imagenes/reloj.digital.jpg" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-one d-md-block">
+				<h4> Relojes Digitales de Mano </h4>
+			</div>
 		  </div>
 		  <div class="carousel-item">
 			<img src="assets/imagenes/reloj.smart.jpg" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-one d-md-block">
+				<h4> Relojes Inteligentes de Mano </h4>
+			</div>
 		  </div>
 		</div>
 		<!-- Botones para avanzar o retroceder en el carousel -->
