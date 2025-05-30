@@ -28,6 +28,11 @@ max-width: 540px;
 margin-top: 20vh; /* vh alto de la pantalla */
 }
 
+.my-card-style1 {
+max-width: 850px;
+margin-top: 10vh; /* vh alto de la pantalla */
+}
+
 .my-card-text-style {
 text-align: justify;
 }
