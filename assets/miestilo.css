@@ -18,6 +18,10 @@ form button{
 /*      background: linear-gradient(to right, #2ecc71, #27ae60); */ /* verde claro a verde oscuro */ 
 /*    } */
 
+.my-bg-navBar{
+
+}
+
 .pv1 {
 	text-align: center;
 	font-weight: bold;
