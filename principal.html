@@ -1,22 +1,25 @@
+<!-- https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<!--Siguiente Etiqueta: Identifica el tipo caracteres a utilizar-->
+		<meta charset="utf-8">
+		<!-- Definición viewport por medio etiqueta meta-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Nombre en la pestaña del navegador -->
+		<title>ReLoJes</title>
+		<link href="assets/bootstrap5.3.6/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/miestilos.css">
+	</head>
 <head>
-	<!--Siguiente Etiqueta: Identifica el tipo caracteres a utilizar-->
-	<meta character="UTF-8"/>
-	<!-- Definición viewport por medio etiqueta meta-->
-	<meta name="viewport" content="witdh=devive-width initial-scale=1.0"/>
-	<link rel="STYLESHEET" href="assets/miestilos.css">
-	<link rel="STYLESHEET" href="assets/bootstrap5.3.6/css/bootstrap.min.css">
-	<!-- Nombre en la pestaña del navegador -->
-	<title> Relojes al Día </title>
-</head>
+	
 <body>
 	<div class="card-header my-header-style">
 		Inicio
 	</div>
 
+	<!-- Nav -->
 	<!--https://getbootstrap.com/docs/5.3/components/navbar/ bg adiciona background white-->
-
 	<nav class="navbar navbar-expand-lg body-tertiary my-bg-navBar"  data-bs-theme="light">
   	    <div class="container-fluid">
                <!-- Logo incrustado en navbar -->
@@ -42,7 +45,9 @@
 		       <a class="nav-link active" aria-current="page" href="assets/subpaginas/acceder.html">Acceder</a>
 		     </li>
 	             <li class="nav-item">
-                        <a class="nav-link disabled fw-bold" aria-disabled="true">  ReLoJ <-> PuNTuaLiDaD </a>
+                        <a class="nav-link disabled fw-bold" aria-disabled="true">  
+							ReLoJ <-> PuNTuaLiDaD 
+						</a>
                      </li>
 	           </ul>
                </div>
@@ -53,17 +58,52 @@
                </form>
   	    </div>
 	</nav>
+	<!-- End Nav -->
 
+	<!-- Carousel -->
+	<!-- https://getbootstrap.com/docs/5.3/components/carousel/ -->
+	<div id="carouselExample" class="carousel slide">
+		<div class="carousel-inner">
+		  <div class="carousel-item active">
+			<img src="assets/imagenes/reloj.mano.jpg" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="assets/imagenes/reloj.bolsillo.jpeg" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="assets/imagenes/reloj.kuku.jpg" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="assets/imagenes/reloj.exterior.jpg" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="assets/imagenes/reloj.digital.jpg" class="d-block w-100" alt="...">
+		  </div>
+		  <div class="carousel-item">
+			<img src="assets/imagenes/reloj.smart.jpg" class="d-block w-100" alt="...">
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	</div>
+	<!-- End Carousel -->
 
 	<div class="dv1">
 		<p class="pv1">
-		Somos una empresa que se dedica a la venta de relojes de mesa y pared con diseños únicos e innovadores. Utilizamos materia prima
-		de calidad. Elaboramos productos a la medida del cliente.
+			Somos una empresa que se dedica a la venta de relojes de mesa y pared con diseños únicos e innovadores. Utilizamos materia prima
+			de calidad. Elaboramos productos a la medida del cliente.
 		</p>
 		<p>
-		También trabajamos con diferentes marcas de relojes.
+			También trabajamos con diferentes marcas de relojes.
 		</p>
 	</div>
+	<script src="assets/bootstrap5.3.6/js/bootstrap.bundle.min.js"></script>
 	<footer>
 	San Juan con Pelligrini 321  |
 	relojes@email.com  |
