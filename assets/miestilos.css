@@ -19,10 +19,6 @@ font-size: 40px;
 background: linear-gradient(to right, #006400, #00ff00); /* verde oscuro a verde claro */
 }
 
-.my-carousel-style {
-carousel-control-width: 50%
-}
-
 .my-card-style {
 max-width: 540px;
 margin-top: 20vh; /* vh alto de la pantalla */
