@@ -3,15 +3,16 @@
 <head>
     <meta character="UTF-8"/>
     <meta name="viewport" content="witdh=devive-width initial-scale=1.0"/>
-
-    <link rel="STYLESHEET" href="../miestilo.css">
+    <!--<link rel="STYLESHEET" href="../miestilo.css">-->
+    <link rel="stylesheet" href="../bootstrap5.3.6/css/bootstrap.min.css">
     <title> Iniciar Sesión </title>
 </head>
 <body>
-     <header>
+     <!--<header>
      <img class="img-header" src="../imagenes/relojes.jpg" alt="Logo de la empresa" />	     
      Iniciar Sesión
-     </header>
+     </header>-->
+     <!--
      <nav class="menu">
                 <ul>
                         <li><a href="../../principal.html">Inicio</a></li>
@@ -20,24 +21,40 @@
                         <li><a href="registrar.html">Registrarse</a></li>
                         <li><a href="acceder.html">Iniciar Sesión</a></li>
                 </ul>
-     </nav>
+     </nav>-->
+     <!-- https://getbootstrap.com/docs/5.3/layout/containers/ -->
+     <!-- https://getbootstrap.com/docs/5.3/forms/overview/#overview -->
+     <form class="container"> <!-- Formulario con id único -->
+	 <div class="row justify-content-center">
+         <!--img class="img-acceder" src="../imagenes/email.jpeg" alt="Logo de email" /-->	     
+	 <div class="mb-3 col-6">
+              <label for="emailacceso" class="form-label fw-bold">Correo Electrónico:</label>
+              <!-- required: Hace que sea obligatorio llenarlo -->
+              <input type="email" class="form-control" id="emailacceso" placeholder="Correo Electrónico" aria-describedby="emailinfo" required/>
+	      <div id="emailinfo" class="form-text">No comparta su email.</div>  
+         </div>
+	 <div class="w-100"></div>
+         <div class="mb-3 col-6">
+              <label for="claveacceso" class="form-label fw-bold">Contraseña:</label>
+              <input type="password" class="form-control" id="claveacceso" placeholder="Contraseña" aria-describedby="passinfo" required>
+	      <div id="passinfo" class="form-text">No comparta su clave de acceso.</div>
+         </div>
+	 <div class="w-100"></div>
+	 <div class="mb-3 col-6 form-check">
+              <input type="checkbox" class="form-check-acceso" id="ejemplocheck"/>
+              <label for="ejemplocheck" class="form-check-label">Recordarme</label>		 
+	 </div>
+	 <div class="w-100"></div>
+	 <button type="submit" class="btn btn-primary col-1" type="submit">Aceptar</button>
+	 <button type="cancel" class="btn btn-danger col-1">Cancelar</button>
+	 </div>
+     </form>
 
-     <div class="dv1">
-         <form class="form-acceder"> <!-- Formulario con id único -->
-             <img class="img-acceder" src="../imagenes/email.jpeg" alt="Logo de email" />	     
-             <label class="label-acceder" for="email">Correo Electrónico:</label>
-		 <!-- required: Hace que sea obligatorio llenarlo -->
-             <input  type="email" placeholder="Correo Electrónico" required/> 
-             <label class="label-acceder" for="email">Contraseña:</label>
-	     <input  type="password" placeholder="Contraseña" required>
-	     <button class="boton-acceder" type="submit">Aceptar</button>
-         </form>
-     </div>
-
+     <!--
      <footer>
      San Juan con Pelligrini 321  |
      relojes@email.com  |
      379 0 00 00 11
-     </footer>
+     </footer>-->
 </body>
-
+</html>
